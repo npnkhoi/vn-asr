@@ -1,8 +1,15 @@
-def main():
+import contextlib
+import wave
+import click
+
+@click.command()
+@click.argument('filename', type=str)
+def main(filename):
     DEBUG = False
     IS_HEADER = True
     X_MIN = 0  # start at 0, the beginning of the file. May need to adjust
-    WORD_TIME = 0.28
+    audio_length = get_audio_length(filename)
+    print(audio_length)
 
     # READ INPUT
     input_file = open("Number transcription - Wiki version - SyllableTrans.csv", "r", encoding="utf8")
@@ -17,7 +24,9 @@ def main():
     for line in lines:
         words.append(line)
         words.append(SILENCE_LINE)
+    xmax = audio_length
     num_words = len(words)
+    word_time = audio_length / num_words
 
 
     fout = open("trans.TextGrid", "w", encoding="utf8")
@@ -28,7 +37,6 @@ def main():
     # adjust to accomodate silence (24 sil), which is included in the numIntervalsWords count
     # about 1.2 seconds/ word, silence
 
-    xmax = X_MIN + WORD_TIME * num_words
 
     header = (
         'File type = "ooTextFile"\nObject class = "TextGrid"\n\nxmin = '
@@ -52,10 +60,10 @@ def main():
     for i in range(num_words):
         line = words[i].split(",")
         word = line[0]
-        phones = line[1:] # remove the first column
-        phones = fixPhoneList(phones)
+        phones = fixPhoneList(line[1:]) # remove the first column
         numIntervalsPhones += len(phones)
         allPhones[timeStart] = phones
+        
         if DEBUG:
             print("debug: " + str(i))
             print(len(phones))
@@ -64,9 +72,9 @@ def main():
             # wait = input("any key")
         fout.write("\t\tintervals[" + str(i + 1) + "]:\n")
         fout.write("\t\t\txmin = " + str(timeStart) + "\n")
-        fout.write("\t\t\txmax = " + str(timeStart + WORD_TIME) + "\n")
+        fout.write("\t\t\txmax = " + str(timeStart + word_time) + "\n")
         fout.write('\t\t\ttext = "' + word + '"\n')
-        timeStart += WORD_TIME
+        timeStart += word_time
 
     secondTierHeader = (
         '\titem [2]:\n\t\tclass = "IntervalTier"\n\t\tname = "Phones" \n\t\txmin = '
@@ -79,15 +87,12 @@ def main():
     fout.write("\t\tintervals: size = " + str(numIntervalsPhones) + "\n")
 
     i = 0
-    # for (k,v) in allPhones.items():
     for (k, phones) in allPhones.items():
         timeStart = float(k)
-        # phones = fixPhoneList(v)
-        # print(phones)
         if len(phones) > 0:
-            intervalTime = WORD_TIME / len(phones)
+            intervalTime = word_time / len(phones)
         else:
-            intervalTime = WORD_TIME
+            intervalTime = word_time
             phones.append("no phones in this word")
         for p in phones:
             # wait = input(p + "\nany key")
@@ -109,5 +114,13 @@ def fixPhoneList(v):
             newV.append(item)
     return newV
 
+def get_audio_length(filename):
+    with contextlib.closing(wave.open(filename, 'r')) as f:
+        frames = f.getnframes()
+        rate = f.getframerate()
+        duration = frames / float(rate)
+        return duration
 
-main()
+
+if __name__ == "__main__":
+    main()
