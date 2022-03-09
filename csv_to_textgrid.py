@@ -1,35 +1,45 @@
+"""
+Generates textgrid files based on audio's length and CSV transcription.
+The textgrid file will get the same name as the audio file.
+
+Usage: `python csv_to_textgrid audio.wav trans.csv`
+Author: Khoi + prof Nanette
+"""
+
+# TODO: fix bug rounding error
+
 import contextlib
+import os
 import wave
 import click
 
 @click.command()
-@click.argument('filename', type=str)
-def main(filename):
-    DEBUG = False
-    IS_HEADER = True
+@click.argument('audio_filename', type=str) # Example: audio.wav
+@click.option('--csv_filename', type=str, default="Number transcription - Wiki version - SyllableTrans.csv")
+def main(audio_filename, csv_filename):
     X_MIN = 0  # start at 0, the beginning of the file. May need to adjust
-    audio_length = get_audio_length(filename)
-    print(audio_length)
 
-    # READ INPUT
-    input_file = open("Number transcription - Wiki version - SyllableTrans.csv", "r", encoding="utf8")
-    lines = input_file.readlines()
-    input_file.close()
+    # READ INPUTS
+    csv_file = open(csv_filename, "r", encoding="utf8")
+    lines = csv_file.readlines()
+    csv_file.close()
+
+    assert audio_filename.endswith('.wav')
+    audio_length = get_audio_length(os.path.join('logs', audio_filename))
+    sample_name = audio_filename[:-4]
 
     # MODIFY INPUT
-    if IS_HEADER:
-        lines = lines[2:]  # remove header row
+    lines = lines[2:]  # remove header row
     SILENCE_LINE = 'sil,sil,'
     words = [SILENCE_LINE]
-    for line in lines:
-        words.append(line)
+    for row in lines:
+        words.append(row)
         words.append(SILENCE_LINE)
+    
+    # DEFINE WORD TIME BASED ON AUDIO LENGTH
     xmax = audio_length
     num_words = len(words)
     word_time = audio_length / num_words
-
-
-    fout = open("trans.TextGrid", "w", encoding="utf8")
 
     # NMV: question? add a silence between each word?
     # originally each word was 250 msec (0.25 sec). May need to adjust
@@ -37,7 +47,8 @@ def main(filename):
     # adjust to accomodate silence (24 sil), which is included in the numIntervalsWords count
     # about 1.2 seconds/ word, silence
 
-
+    # WRITE INTO TEXTGRID FILE
+    fout = open(os.path.join('logs', sample_name + '.textgrid'), "w", encoding="utf8")
     header = (
         'File type = "ooTextFile"\nObject class = "TextGrid"\n\nxmin = '
         + str(X_MIN)
@@ -56,25 +67,36 @@ def main(filename):
 
     allPhones = {}
     numIntervalsPhones = 0
-    timeStart = X_MIN
-    for i in range(num_words):
-        line = words[i].split(",")
-        word = line[0]
-        phones = fixPhoneList(line[1:]) # remove the first column
+    first_tier = []
+    second_tier = []
+
+    
+    for word_id, row in enumerate(words):
+        row = row.split(",")
+        word = row[0]
+        phones = fixPhoneList(row[1:]) # remove the first column and empty cells
         numIntervalsPhones += len(phones)
-        allPhones[timeStart] = phones
+        word_start = X_MIN + word_time * word_id
+        allPhones[word_start] = phones
         
-        if DEBUG:
-            print("debug: " + str(i))
-            print(len(phones))
-            print(phones)
-            print(allPhones)
-            # wait = input("any key")
-        fout.write("\t\tintervals[" + str(i + 1) + "]:\n")
-        fout.write("\t\t\txmin = " + str(timeStart) + "\n")
-        fout.write("\t\t\txmax = " + str(timeStart + word_time) + "\n")
+        # try:
+        #     phone_time = word_time / len(phones)
+        # except:
+        #     print(word_id, word, row)
+        # first_tier.append((word_start, word_start + word_time, word))
+        # for phone_id, phone in enumerate(phones):
+        #     phone_start = word_start + phone_time * phone_id
+        #     second_tier.append((phone_start, phone_time, phone))
+
+
+        fout.write("\t\tintervals[" + str(word_id + 1) + "]:\n")
+        fout.write("\t\t\txmin = " + str(word_start) + "\n")
+        fout.write("\t\t\txmax = " + str(word_start + word_time) + "\n")
         fout.write('\t\t\ttext = "' + word + '"\n')
-        timeStart += word_time
+        word_start += word_time
+
+    # print(len(first_tier), first_tier[:5])
+    # print(len(second_tier), second_tier[:5])
 
     secondTierHeader = (
         '\titem [2]:\n\t\tclass = "IntervalTier"\n\t\tname = "Phones" \n\t\txmin = '
@@ -86,25 +108,22 @@ def main(filename):
     fout.write("\n" + secondTierHeader)
     fout.write("\t\tintervals: size = " + str(numIntervalsPhones) + "\n")
 
-    i = 0
+    word_id = 0
     for (k, phones) in allPhones.items():
-        timeStart = float(k)
+        word_start = float(k)
         if len(phones) > 0:
             intervalTime = word_time / len(phones)
         else:
             intervalTime = word_time
             phones.append("no phones in this word")
         for p in phones:
-            # wait = input(p + "\nany key")
-            fout.write("\t\tintervals[" + str(i + 1) + "]:\n")
-            fout.write("\t\t\txmin = " + str(timeStart) + "\n")
-            fout.write("\t\t\txmax = " + str(timeStart + intervalTime) + "\n")
+            fout.write("\t\tintervals[" + str(word_id + 1) + "]:\n")
+            fout.write("\t\t\txmin = " + str(word_start) + "\n")
+            fout.write("\t\t\txmax = " + str(word_start + intervalTime) + "\n")
             fout.write('\t\t\ttext = "' + p + '"\n')
-            i = i + 1
-            timeStart += intervalTime
-
+            word_id = word_id + 1
+            word_start += intervalTime
     fout.close()
-
 
 def fixPhoneList(v):
     newV = []
@@ -114,8 +133,8 @@ def fixPhoneList(v):
             newV.append(item)
     return newV
 
-def get_audio_length(filename):
-    with contextlib.closing(wave.open(filename, 'r')) as f:
+def get_audio_length(audio_filename):
+    with contextlib.closing(wave.open(audio_filename, 'r')) as f:
         frames = f.getnframes()
         rate = f.getframerate()
         duration = frames / float(rate)
