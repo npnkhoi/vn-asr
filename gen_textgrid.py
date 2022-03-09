@@ -2,7 +2,7 @@
 Generates textgrid files based on audio's length and CSV transcription.
 The textgrid file will get the same name as the audio file.
 
-Usage: `python csv_to_textgrid audio.wav trans.csv`
+Usage: `python gen_textgrid.py audio.wav [--csv_filename ...]`
 Author: Khoi + prof Nanette
 """
 
