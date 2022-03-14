@@ -1,48 +1,79 @@
-note,phoneme,examples
-Initial consonants,ɓ,ba
-Initial consonants,ɗ,đi
-Initial consonants,f,phở
-Initial consonants,ɣ,ga; ghế
-Initial consonants,h,hàng
-Initial consonants,k,"cô, kem"
-Initial consonants,w,quanh
-Initial consonants,kʰ,khô
-Initial consonants,l,là
-Initial consonants,m,mai
-Initial consonants,n,nam
-Initial consonants,ɲ,nhà
-Initial consonants,ŋ,ngâm; nghe
-Initial consonants,p,pin
-Initial consonants,s,xa
-Initial consonants,ʂ,sáu
-Initial consonants,t,tây
-Initial consonants,tʰ,thầy
-Initial consonants,t͡ɕ,chè
-Initial consonants,ʈ,tra
-Initial consonants,j,"về, già, giết, da, danh"
-Initial consonants,r,"ra, rồi"
-Medial glide,ʷ,"oanh; quốc; Nguyễn, tuy"
-Final consonants,j,"cái, tay[5][6], tui[7]"
-Final consonants,m,thêm
-Final consonants,ŋ,"ban, trứng"
-Final consonants,n,"mìn, bên (after i, ê)[8], bình[8][5]"
-Final consonants,ŋm,"bốn [9], bún (after u, ô), chúng (after u, ô, o)[10]"
-Final consonants,p̚,tiếp
-Final consonants,k,"xuất, ác"
-Final consonants,t,"chít (after i, ê)[8], cách[8][5]"
-Final consonants,kp,"một (after u, ô), học (after u, ô, o)[10]"
-Final consonants,w,"tao, triệu[10],đau"
-Vowels,ɐ,ăn
-Vowels,a,ba
-Vowels,e,về
-Vowels,ɛ,xe
-Vowels,ə,"ân, cây"
-Vowels,ə,bơ
-Vowels,i,khi; tuy[4]
-Vowels,ɨ,tư
-Vowels,o,"cô, sâu"
-Vowels,ɔ,có; xoong[11]; cau
-Vowels,u,ru
-Diphthongs,iə,"viên, bia"
-Diphthongs,ɨə,"xương, chưa"
-Diphthongs,uə,"uống, mua"
+note,phoneme,examples,note
+Initial consonants,ʔ              ,"anh (unwritten, occurs before initial vowels)",
+Initial consonants,ɓ,ba,
+Initial consonants,ɗ,đi,
+Initial consonants,f,phở,
+Initial consonants,ɣ,ga; ghế,
+Initial consonants,h,hàng,
+Initial consonants,k,"cô, kem",
+Initial consonants,w,quanh,
+Initial consonants,kʰ,khô,
+Initial consonants,l,là,
+Initial consonants,m,mai,
+Initial consonants,n,nam,
+Initial consonants,ɲ,nhà,
+Initial consonants,ŋ,ngâm; nghe,
+Initial consonants,p,pin,
+Initial consonants,s,xa,
+Initial consonants,ʂ,sáu,
+Initial consonants,t,tây,
+Initial consonants,tʰ,thầy,
+Initial consonants,t͡ɕ,chè,
+Initial consonants,ʨ,chè,add thêm
+Initial consonants,ʈ,tra,
+Initial consonants,j,"về, già, giết, da, danh",
+Initial consonants,r,"ra, rồi",
+Medial glide,ʷ,"oanh; quốc; Nguyễn, tuy",
+Final consonants,j,"cái, tay[5][6], tui[7]",
+Final consonants,m,thêm,
+Final consonants,ŋ,"ban, trứng",
+Final consonants,n,"mìn, bên (after i, ê)[8], bình[8][5]",
+Final consonants,ŋm,"bốn [9], bún (after u, ô), chúng (after u, ô, o)[10]",
+Final consonants,p̚,tiếp,
+Final consonants,k,"xuất, ác",
+Final consonants,t,"chít (after i, ê)[8], cách[8][5]",
+Final consonants,kp,"một (after u, ô), học (after u, ô, o)[10]",
+Final consonants,w,"tao, triệu[10],đau",
+Vowels,aː,a,
+Vowels,a,ă,
+Vowels,ə,â,
+Vowels,ɛ,e,
+Vowels,e,về,
+Vowels,i,i/y,
+Vowels,u,u,
+Vowels,ɨ,ư,
+Vowels,ɔ,o/oo,
+Vowels,o,ô,
+Vowels,əː,ơ/ê,
+Diphthongs,aːw,ao/au,
+Diphthongs,əw,âu,
+Diphthongs,aːj,ai/ay,
+Diphthongs,aj,ay,
+Diphthongs,əj,ây,
+Diphthongs,ɛw,eo,
+Diphthongs,ew,êu,
+Diphthongs,iə,ia/iê,
+Diphthongs,iw,iu/iêu,
+Diphthongs,waː,oa,
+Diphthongs,ʷa,oă,
+Diphthongs,wɛ,oe,
+Diphthongs,ɔj,oi,
+Diphthongs,oj,ôi,
+Diphthongs,əːj,ơi,
+Diphthongs,uə,ua/uô,
+Diphthongs,ʷə,uâ,
+Diphthongs,wej,uê,
+Diphthongs,uj,ui/uôi,
+Diphthongs,ʷəː,uơ,
+Diphthongs,wɪj,uy,
+Diphthongs,ɨə,ươ/ưa,
+Diphthongs,ɨj,ưi/ươi,
+Diphthongs,ɨw,ưu,
+Triphthongs,wiə,uya/uyê,
+Triphthongs,waːj,oai,
+Triphthongs,waːw,oao,
+Triphthongs,wɛw,oeo,
+Triphthongs,wiw,uyu,
+Triphthongs,wiw,ươu,
+Triphthongs,oaj,oay,
+Triphthongs,wəj,uây,
