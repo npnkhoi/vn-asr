@@ -1,0 +1,28 @@
+shared split sil sil_B sil_E sil_I sil_S
+shared split spn spn_B spn_E spn_I spn_S
+shared split kʰ_B kʰ_E kʰ_I kʰ_S
+shared split o_B o_E o_I o_S
+shared split ŋm_B ŋm_E ŋm_I ŋm_S
+shared split m_B m_E m_I m_S
+shared split o˨˧_B o˨˧_E o˨˧_I o˨˧_S
+shared split kp_B kp_E kp_I kp_S
+shared split h_B h_E h_I h_S
+shared split aːj_B aːj_E aːj_I aːj_S
+shared split ɓ_B ɓ_E ɓ_I ɓ_S
+shared split aː_B aː_E aː_I aː_S
+shared split o˧˥_B o˧˥_E o˧˥_I o˧˥_S
+shared split n_B n_E n_I n_S
+shared split a_B a_E a_I a_S
+shared split ʂ_B ʂ_E ʂ_I ʂ_S
+shared split aːw˧˥_B aːw˧˥_E aːw˧˥_I aːw˧˥_S
+shared split aːj˧˩˧_B aːj˧˩˧_E aːj˧˩˧_I aːj˧˩˧_S
+shared split t_B t_E t_I t_S
+shared split aː˧˥_B aː˧˥_E aː˧˥_I aː˧˥_S
+shared split i˧˥_B i˧˥_E i˧˥_I i˧˥_S
+shared split ɨəj˨˩_B ɨəj˨˩_E ɨəj˨˩_I ɨəj˨˩_S
+shared split ɨəj_B ɨəj_E ɨəj_I ɨəj_S
+shared split l_B l_E l_I l_S
+shared split e˧˩˧_B e˧˩˧_E e˧˩˧_I e˧˩˧_S
+shared split ʈ_B ʈ_E ʈ_I ʈ_S
+shared split t͡ɕ_B t͡ɕ_E t͡ɕ_I t͡ɕ_S
+shared split u˨˧_B u˨˧_E u˨˧_I u˨˧_S

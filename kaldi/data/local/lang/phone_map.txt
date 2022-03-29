@@ -1,0 +1,28 @@
+sil sil sil_B sil_E sil_I sil_S 
+spn spn spn_B spn_E spn_I spn_S 
+kʰ kʰ_B kʰ_E kʰ_I kʰ_S 
+o o_B o_E o_I o_S 
+ŋm ŋm_B ŋm_E ŋm_I ŋm_S 
+m m_B m_E m_I m_S 
+o˨˧ o˨˧_B o˨˧_E o˨˧_I o˨˧_S 
+kp kp_B kp_E kp_I kp_S 
+h h_B h_E h_I h_S 
+aːj aːj_B aːj_E aːj_I aːj_S 
+ɓ ɓ_B ɓ_E ɓ_I ɓ_S 
+aː aː_B aː_E aː_I aː_S 
+o˧˥ o˧˥_B o˧˥_E o˧˥_I o˧˥_S 
+n n_B n_E n_I n_S 
+a a_B a_E a_I a_S 
+ʂ ʂ_B ʂ_E ʂ_I ʂ_S 
+aːw˧˥ aːw˧˥_B aːw˧˥_E aːw˧˥_I aːw˧˥_S 
+aːj˧˩˧ aːj˧˩˧_B aːj˧˩˧_E aːj˧˩˧_I aːj˧˩˧_S 
+t t_B t_E t_I t_S 
+aː˧˥ aː˧˥_B aː˧˥_E aː˧˥_I aː˧˥_S 
+i˧˥ i˧˥_B i˧˥_E i˧˥_I i˧˥_S 
+ɨəj˨˩ ɨəj˨˩_B ɨəj˨˩_E ɨəj˨˩_I ɨəj˨˩_S 
+ɨəj ɨəj_B ɨəj_E ɨəj_I ɨəj_S 
+l l_B l_E l_I l_S 
+e˧˩˧ e˧˩˧_B e˧˩˧_E e˧˩˧_I e˧˩˧_S 
+ʈ ʈ_B ʈ_E ʈ_I ʈ_S 
+t͡ɕ t͡ɕ_B t͡ɕ_E t͡ɕ_I t͡ɕ_S 
+u˨˧ u˨˧_B u˨˧_E u˨˧_I u˨˧_S 

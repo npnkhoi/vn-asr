@@ -1,0 +1,20 @@
+silence sil_S
+<UNK> spn_S
+không kʰ_B o_I ŋm_E
+một m_B o˨˧_I kp_E
+hai h_B aːj_E
+ba ɓ_B aː_E
+bốn ɓ_B o˧˥_I ŋm_E
+năm n_B a_I m_E
+sáu ʂ_B aːw˧˥_E
+bảy ɓ_B aːj˧˩˧_E
+tám t_B aː˧˥_I m_E
+chín t͡ɕ_B i˧˥_I n_E
+mười m_B ɨəj˨˩_E
+mươi m_B ɨəj_E
+lẻ l_B e˧˩˧_E
+lăm l_B a_I m_E
+trăm ʈ_B a_I m_E
+chục t͡ɕ_B u˨˧_I kp_E
+mốt m_B o˧˥_I kp_E
+<eps> sil
