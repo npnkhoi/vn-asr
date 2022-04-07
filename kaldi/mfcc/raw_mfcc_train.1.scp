@@ -1,0 +1,12 @@
+S_S01_D1 /home/cs398/kaldi/egs/numbers/mfcc/raw_mfcc_train.1.ark:9
+S_S01_D2 /home/cs398/kaldi/egs/numbers/mfcc/raw_mfcc_train.1.ark:11102
+S_S01_D3 /home/cs398/kaldi/egs/numbers/mfcc/raw_mfcc_train.1.ark:21272
+S_S01_D4 /home/cs398/kaldi/egs/numbers/mfcc/raw_mfcc_train.1.ark:33171
+S_S01_D5 /home/cs398/kaldi/egs/numbers/mfcc/raw_mfcc_train.1.ark:44901
+S_S01_D6 /home/cs398/kaldi/egs/numbers/mfcc/raw_mfcc_train.1.ark:57216
+S_S04_D1 /home/cs398/kaldi/egs/numbers/mfcc/raw_mfcc_train.1.ark:68478
+S_S04_D2 /home/cs398/kaldi/egs/numbers/mfcc/raw_mfcc_train.1.ark:78505
+S_S04_D3 /home/cs398/kaldi/egs/numbers/mfcc/raw_mfcc_train.1.ark:88506
+S_S04_D4 /home/cs398/kaldi/egs/numbers/mfcc/raw_mfcc_train.1.ark:97506
+S_S04_D5 /home/cs398/kaldi/egs/numbers/mfcc/raw_mfcc_train.1.ark:106792
+S_S04_D6 /home/cs398/kaldi/egs/numbers/mfcc/raw_mfcc_train.1.ark:116143

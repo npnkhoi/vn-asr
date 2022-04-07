@@ -1,0 +1,20 @@
+ba ba ɓ_B aː_E
+bảy bảy ɓ_B aːj˧˩˧_E
+bốn bốn ɓ_B o˧˥_I ŋm_E
+chín chín t͡ɕ_B i˧˥_I n_E
+chục chục t͡ɕ_B u˨˧_I kp_E
+<eps> <eps> sil
+hai hai h_B aːj_E
+không không kʰ_B o_I ŋm_E
+lăm lăm l_B a_I m_E
+lẻ lẻ l_B e˧˩˧_E
+mốt mốt m_B o˧˥_I kp_E
+một một m_B o˨˧_I kp_E
+mươi mươi m_B ɨəj_E
+mười mười m_B ɨəj˨˩_E
+năm năm n_B a_I m_E
+sáu sáu ʂ_B aːw˧˥_E
+silence silence sil_S
+tám tám t_B aː˧˥_I m_E
+trăm trăm ʈ_B a_I m_E
+<UNK> <UNK> spn_S

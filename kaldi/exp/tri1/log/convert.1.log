@@ -1,0 +1,7 @@
+# convert-ali exp/mono_ali/final.mdl exp/tri1/1.mdl exp/tri1/tree "ark:gunzip -c exp/mono_ali/ali.1.gz|" "ark:|gzip -c >exp/tri1/ali.1.gz" 
+# Started at Thứ năm, 07 Tháng 4 năm 2022 14:09:00 +07
+#
+convert-ali exp/mono_ali/final.mdl exp/tri1/1.mdl exp/tri1/tree 'ark:gunzip -c exp/mono_ali/ali.1.gz|' 'ark:|gzip -c >exp/tri1/ali.1.gz' 
+LOG (convert-ali[5.5.1009~1-e4940]:main():convert-ali.cc:120) Succeeded converting alignments for 12 files, failed for 0
+# Accounting: time=0 threads=1
+# Ended (code 0) at Thứ năm, 07 Tháng 4 năm 2022 14:09:00 +07, elapsed time 0 seconds
