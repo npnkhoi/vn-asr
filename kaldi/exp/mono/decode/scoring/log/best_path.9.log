@@ -1,0 +1,32 @@
+# lattice-best-path --lm-scale=9 --word-symbol-table=exp/mono/graph/words.txt "ark:gunzip -c exp/mono/decode/lat.*.gz|" ark,t:exp/mono/decode/scoring/9.tra 
+# Started at Thứ hai, 11 Tháng 4 năm 2022 14:51:22 +07
+#
+lattice-best-path --lm-scale=9 --word-symbol-table=exp/mono/graph/words.txt 'ark:gunzip -c exp/mono/decode/lat.*.gz|' ark,t:exp/mono/decode/scoring/9.tra 
+LOG (lattice-best-path[5.5.1009~1-e4940]:main():lattice-best-path.cc:99) For utterance S_S10_D1, best cost 870.78 + 71160.4 = 72031.2 over 697 frames.
+S_S10_D1 hai mười mươi mươi sáu sáu hai trăm ba sáu một mươi mươi một mươi một 
+LOG (lattice-best-path[5.5.1009~1-e4940]:main():lattice-best-path.cc:99) For utterance S_S10_D2, best cost 859.309 + 76518.5 = 77377.8 over 725 frames.
+S_S10_D2 trăm trăm mươi một trăm lẻ một một ba hai trăm mươi 
+LOG (lattice-best-path[5.5.1009~1-e4940]:main():lattice-best-path.cc:99) For utterance S_S10_D3, best cost 838.958 + 77517 = 78356 over 735 frames.
+S_S10_D3 một trăm năm hai chín trăm một năm trăm hai mươi trăm trăm 
+LOG (lattice-best-path[5.5.1009~1-e4940]:main():lattice-best-path.cc:99) For utterance S_S10_D4, best cost 847.042 + 72931.7 = 73778.8 over 697 frames.
+S_S10_D4 hai trăm mươi một trăm trăm một trăm ba mươi sáu hai trăm lăm mươi mươi 
+LOG (lattice-best-path[5.5.1009~1-e4940]:main():lattice-best-path.cc:99) For utterance S_S10_D5, best cost 806.282 + 77511.3 = 78317.5 over 759 frames.
+S_S10_D5 trăm trăm hai một trăm lăm sáu trăm mươi sáu sáu trăm sáu 
+LOG (lattice-best-path[5.5.1009~1-e4940]:main():lattice-best-path.cc:99) For utterance S_S10_D6, best cost 872.491 + 71453 = 72325.5 over 690 frames.
+S_S10_D6 mươi mươi hai mươi ba trăm mươi ba hai mươi trăm năm hai trăm một sáu 
+LOG (lattice-best-path[5.5.1009~1-e4940]:main():lattice-best-path.cc:99) For utterance S_S14_D1, best cost 808.948 + 56551.4 = 57360.3 over 540 frames.
+S_S14_D1 sáu trăm trăm trăm bảy sáu trăm sáu mươi mươi sáu trăm ba trăm sáu bảy mươi 
+LOG (lattice-best-path[5.5.1009~1-e4940]:main():lattice-best-path.cc:99) For utterance S_S14_D2, best cost 1054.2 + 71947.8 = 73002 over 702 frames.
+S_S14_D2 tám trăm tám ba mươi sáu sáu chín tám mốt mươi tám tám lăm lẻ sáu trăm ba mươi 
+LOG (lattice-best-path[5.5.1009~1-e4940]:main():lattice-best-path.cc:99) For utterance S_S14_D3, best cost 911.199 + 69795.6 = 70706.8 over 676 frames.
+S_S14_D3 sáu mươi trăm chín mươi sáu chín tám bảy sáu năm tám trăm mươi ba hai trăm trăm 
+LOG (lattice-best-path[5.5.1009~1-e4940]:main():lattice-best-path.cc:99) For utterance S_S14_D4, best cost 1034.56 + 77899.8 = 78934.3 over 762 frames.
+S_S14_D4 sáu trăm tám mươi ba sáu mươi tám sáu sáu năm bảy sáu mươi chín mươi sáu trăm mươi trăm sáu 
+LOG (lattice-best-path[5.5.1009~1-e4940]:main():lattice-best-path.cc:99) For utterance S_S14_D5, best cost 1016.77 + 68310 = 69326.8 over 672 frames.
+S_S14_D5 sáu tám tám tám hai sáu trăm tám mươi sáu mươi tám mươi ba sáu chín mươi năm hai hai 
+LOG (lattice-best-path[5.5.1009~1-e4940]:main():lattice-best-path.cc:99) For utterance S_S14_D6, best cost 1047.08 + 67803.6 = 68850.6 over 668 frames.
+S_S14_D6 sáu năm mươi lăm mươi sáu mốt trăm trăm sáu mươi hai trăm tám năm bảy sáu ba trăm ba tám 
+LOG (lattice-best-path[5.5.1009~1-e4940]:main():lattice-best-path.cc:124) Overall cost per frame is 104.574 = 1.31775 [graph] + 103.256 [acoustic] over 8323 frames.
+LOG (lattice-best-path[5.5.1009~1-e4940]:main():lattice-best-path.cc:128) Done 12 lattices, failed for 0
+# Accounting: time=0 threads=1
+# Ended (code 0) at Thứ hai, 11 Tháng 4 năm 2022 14:51:22 +07, elapsed time 0 seconds

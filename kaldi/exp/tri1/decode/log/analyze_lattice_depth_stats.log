@@ -1,0 +1,26 @@
+# gunzip -c exp/tri1/decode/depth_tmp.*.gz | steps/diagnostic/analyze_lattice_depth_stats.py exp/tri1/graph exp/tri1/decode/ali_frame_tmp.gz 
+# Started at Thứ hai, 11 Tháng 4 năm 2022 14:54:14 +07
+#
+The total amount of data analyzed assuming 100 frames per second is 0.0 hours
+Overall, lattice depth (10,50,90-percentile)=(6,27,358) and mean=107.2
+Nonsilence phones as a group account for 73.2% of frames, with lattice depth (10,50,90-percentile)=(6,23,282) and mean=90.9
+Phone sil accounts for 26.8% of frames, with lattice depth (10,50,90-percentile)=(9,49,482) and mean=151.5
+Phone m_E accounts for 10.6% of frames, with lattice depth (10,50,90-percentile)=(7,33,277) and mean=96.1
+Phone m_B accounts for 10.5% of frames, with lattice depth (10,50,90-percentile)=(4,24,282) and mean=95.5
+Phone aːj_E accounts for 9.9% of frames, with lattice depth (10,50,90-percentile)=(7,22,358) and mean=120.6
+Phone aːw˧˥_E accounts for 5.8% of frames, with lattice depth (10,50,90-percentile)=(8,37,439) and mean=116.6
+Phone ɨəj_E accounts for 5.5% of frames, with lattice depth (10,50,90-percentile)=(8,35,359) and mean=119.5
+Phone ʈ_B accounts for 4.2% of frames, with lattice depth (10,50,90-percentile)=(4,20,173) and mean=84.5
+Phone ɓ_B accounts for 4.0% of frames, with lattice depth (10,50,90-percentile)=(3,10,114) and mean=57.4
+Phone a_I accounts for 4.0% of frames, with lattice depth (10,50,90-percentile)=(6,25,164) and mean=78.2
+Phone n_B accounts for 3.1% of frames, with lattice depth (10,50,90-percentile)=(7,22,79) and mean=37.9
+Phone aː_E accounts for 2.1% of frames, with lattice depth (10,50,90-percentile)=(8,12,204) and mean=87.6
+Phone h_B accounts for 2.1% of frames, with lattice depth (10,50,90-percentile)=(8,15,137) and mean=77.4
+Phone t_B accounts for 2.0% of frames, with lattice depth (10,50,90-percentile)=(2,11,226) and mean=60.8
+Phone t͡ɕ_B accounts for 1.9% of frames, with lattice depth (10,50,90-percentile)=(4,10,29) and mean=15.0
+Phone aː˧˥_I accounts for 1.9% of frames, with lattice depth (10,50,90-percentile)=(2,18,258) and mean=63.5
+Phone ʂ_B accounts for 1.7% of frames, with lattice depth (10,50,90-percentile)=(6,29,734) and mean=167.2
+Phone n_E accounts for 1.7% of frames, with lattice depth (10,50,90-percentile)=(5,20,42) and mean=19.0
+Phone i˧˥_I accounts for 0.7% of frames, with lattice depth (10,50,90-percentile)=(4,13,33) and mean=17.6
+# Accounting: time=0 threads=1
+# Ended (code 0) at Thứ hai, 11 Tháng 4 năm 2022 14:54:14 +07, elapsed time 0 seconds

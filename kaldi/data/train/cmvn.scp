@@ -1,2 +1,4 @@
 S01 /home/cs398/kaldi/egs/numbers/mfcc/cmvn_train.ark:4
-S04 /home/cs398/kaldi/egs/numbers/mfcc/cmvn_train.ark:247
+S03 /home/cs398/kaldi/egs/numbers/mfcc/cmvn_train.ark:247
+S04 /home/cs398/kaldi/egs/numbers/mfcc/cmvn_train.ark:490
+S18 /home/cs398/kaldi/egs/numbers/mfcc/cmvn_train.ark:733

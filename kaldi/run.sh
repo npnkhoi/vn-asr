@@ -7,7 +7,7 @@ lm_order=1 # language model order (n-gram quantity) - 1 is enough for digits gra
 . utils/parse_options.sh || exit 1
 [[ $# -ge 1 ]] && { echo "Wrong arguments!"; exit 1; }
 # Removing previously created data (from last run.sh execution)
-rm -rf exp mfcc data/train/spk2utt data/train/cmvn.scp data/train/feats.scp data/train/split1 data/test/spk2utt data/test/cmvn.scp data/test/feats.scp data/test/split1 data/local/lang data/lang data/local/tmp data/local/dict/lexiconp.txt
+# rm -rf exp mfcc data/train/spk2utt data/train/cmvn.scp data/train/feats.scp data/train/split1 data/test/spk2utt data/test/cmvn.scp data/test/feats.scp data/test/split1 data/local/lang data/lang data/local/tmp data/local/dict/lexiconp.txt
 echo
 echo "===== PREPARING ACOUSTIC DATA ====="
 echo
@@ -19,7 +19,7 @@ echo
 # utt2spk     [<uterranceID> <speakerID>]
 # corpus.txt  [<text_transcription>]
 # Making spk2utt files
-utils/utt2spk_to_spk2utt.pl data/train/utt2spk > data/train/spk2utt
+utils/utt2spk_to_spk2utt.pl data/train/utt2spk > data/train/spk2utt # speaker to utterance
 utils/utt2spk_to_spk2utt.pl data/test/utt2spk > data/test/spk2utt
 echo
 echo "===== FEATURES EXTRACTION ====="
@@ -44,7 +44,7 @@ echo
 # silence_phones.txt    [<phone>]
 # optional_silence.txt  [<phone>]
 # Preparing language data
-utils/prepare_lang.sh data/local/dict "<UNK>" data/local/lang data/lang
+utils/prepare_lang.sh data/local/dict "silence" data/local/lang data/lang
 echo
 echo "===== LANGUAGE MODEL CREATION ====="
 echo "===== MAKING lm.arpa ====="

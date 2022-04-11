@@ -1,0 +1,36 @@
+# gmm-latgen-faster --max-active=7000 --beam=13.0 --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri1/graph/words.txt exp/tri1/final.mdl exp/tri1/graph/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split1/1/utt2spk scp:data/test/split1/1/cmvn.scp scp:data/test/split1/1/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark:|gzip -c > exp/tri1/decode/lat.1.gz" 
+# Started at Thứ hai, 11 Tháng 4 năm 2022 14:54:05 +07
+#
+gmm-latgen-faster --max-active=7000 --beam=13.0 --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri1/graph/words.txt exp/tri1/final.mdl exp/tri1/graph/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split1/1/utt2spk scp:data/test/split1/1/cmvn.scp scp:data/test/split1/1/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark:|gzip -c > exp/tri1/decode/lat.1.gz' 
+apply-cmvn --utt2spk=ark:data/test/split1/1/utt2spk scp:data/test/split1/1/cmvn.scp scp:data/test/split1/1/feats.scp ark:- 
+add-deltas ark:- ark:- 
+S_S10_D1 hai trăm mươi sáu trăm ba mươi hai sáu mươi trăm hai mươi 
+LOG (gmm-latgen-faster[5.5.1009~1-e4940]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S10_D1 is -8.6771 over 697 frames.
+S_S10_D2 trăm trăm mươi hai chín trăm năm hai một trăm sáu trăm mươi mươi 
+LOG (gmm-latgen-faster[5.5.1009~1-e4940]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S10_D2 is -8.9539 over 725 frames.
+S_S10_D3 một trăm mươi hai chín trăm hai trăm tám mươi ba hai trăm mươi 
+LOG (gmm-latgen-faster[5.5.1009~1-e4940]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S10_D3 is -8.94833 over 735 frames.
+S_S10_D4 hai trăm tám mươi ba hai trăm trăm hai trăm hai chín mươi hai trăm mươi 
+LOG (gmm-latgen-faster[5.5.1009~1-e4940]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S10_D4 is -8.86775 over 697 frames.
+S_S10_D5 ba trăm hai hai mươi sáu mươi mươi hai trăm mươi 
+LOG (gmm-latgen-faster[5.5.1009~1-e4940]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S10_D5 is -8.65993 over 759 frames.
+S_S10_D6 mươi ba hai trăm mươi ba hai ba trăm năm mươi hai trăm hai 
+LOG (gmm-latgen-faster[5.5.1009~1-e4940]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S10_D6 is -8.78886 over 690 frames.
+S_S14_D1 một trăm trăm năm mươi sáu trăm mươi sáu mươi trăm năm chín bảy mươi 
+LOG (gmm-latgen-faster[5.5.1009~1-e4940]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S14_D1 is -8.9376 over 540 frames.
+S_S14_D2 tám trăm tám chín ba sáu chín tám trăm mốt ba tám tám tám mươi sáu trăm bảy mươi năm 
+LOG (gmm-latgen-faster[5.5.1009~1-e4940]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S14_D2 is -8.76304 over 702 frames.
+S_S14_D3 sáu mươi trăm chín mươi năm sáu chín bảy mươi năm tám tám mươi hai trăm mươi năm trăm 
+LOG (gmm-latgen-faster[5.5.1009~1-e4940]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S14_D3 is -8.76501 over 676 frames.
+LOG (apply-cmvn[5.5.1009~1-e4940]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 12 utterances, errors on 0
+S_S14_D4 sáu trăm tám ba sáu chín ba bảy sáu sáu trăm chín mươi sáu trăm bảy 
+LOG (gmm-latgen-faster[5.5.1009~1-e4940]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S14_D4 is -8.68317 over 762 frames.
+S_S14_D5 tám tám tám mươi sáu năm tám bảy tám chín trăm mươi sáu chín năm mươi hai 
+LOG (gmm-latgen-faster[5.5.1009~1-e4940]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S14_D5 is -8.69298 over 672 frames.
+S_S14_D6 sáu năm năm lăm mươi sáu trăm hai trăm sáu mươi ba hai trăm năm bảy mươi bảy mươi 
+LOG (gmm-latgen-faster[5.5.1009~1-e4940]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:375) Log-like per frame for utterance S_S14_D6 is -8.63745 over 668 frames.
+LOG (gmm-latgen-faster[5.5.1009~1-e4940]:main():gmm-latgen-faster.cc:176) Time taken 8.25945s: real-time factor assuming 100 frames/sec is 0.0992365
+LOG (gmm-latgen-faster[5.5.1009~1-e4940]:main():gmm-latgen-faster.cc:179) Done 12 utterances, failed for 0
+LOG (gmm-latgen-faster[5.5.1009~1-e4940]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is -8.77877 over 8323 frames.
+# Accounting: time=9 threads=1
+# Ended (code 0) at Thứ hai, 11 Tháng 4 năm 2022 14:54:14 +07, elapsed time 9 seconds

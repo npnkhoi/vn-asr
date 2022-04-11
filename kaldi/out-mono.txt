@@ -1,0 +1,12 @@
+S_S10_D1 hai mười mươi mươi năm mươi một sáu sáu sáu trăm trăm ba hai sáu mười mươi mươi một hai mươi mươi một 
+S_S10_D2 ba mươi trăm trăm mươi mươi một chín trăm năm lẻ một mốt sáu ba sáu hai lăm mươi mươi 
+S_S10_D3 một trăm chín năm hai chín trăm mươi lẻ một ba năm trăm lăm hai mươi lăm ba mươi 
+S_S10_D4 lẻ trăm mươi một sáu năm trăm một hai lẻ trăm ba chín năm sáu sáu hai trăm lăm mươi mươi 
+S_S10_D5 hai trăm trăm hai hai sáu một trăm lăm sáu hai trăm hai mươi mươi một sáu sáu trăm mươi sáu 
+S_S10_D6 sáu mươi mươi một hai mươi ba trăm lăm mươi ba hai hai mươi lăm mươi năm một hai sáu lăm sáu một sáu 
+S_S14_D1 sáu trăm trăm mươi mươi bảy sáu trăm mươi sáu mươi mốt sáu trăm mươi năm trăm ba sáu bảy mươi hai 
+S_S14_D2 tám trăm tám ba mươi bảy sáu sáu sáu chín tám tám mốt sáu mười mươi tám tám lăm lẻ sáu trăm bảy mươi mươi ba sáu 
+S_S14_D3 sáu mươi trăm chín mươi mươi mươi sáu sáu chín tám bảy trăm sáu ba sáu năm tám sáu trăm tám sáu ba bảy hai trăm mươi trăm sáu 
+S_S14_D4 sáu trăm tám trăm sáu mươi ba sáu mươi tám bốn sáu sáu năm bảy sáu sáu sáu mươi chín mươi sáu sáu sáu trăm mươi trăm hai sáu 
+S_S14_D5 sáu tám tám tám mươi mươi hai sáu sáu năm tám năm ba ba sáu sáu sáu mươi tám mươi mươi ba sáu sáu trăm chín mươi năm hai hai sáu 
+S_S14_D6 sáu năm mươi lăm trăm mươi sáu mốt hai trăm sáu mươi ba hai trăm tám năm bảy sáu sáu ba trăm ba tám sáu 

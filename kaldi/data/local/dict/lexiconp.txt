@@ -1,5 +1,4 @@
 silence 1.0	sil
-<UNK> 1.0	spn
 không 1.0	kʰ o ŋm
 một 1.0	m o˨˧ kp
 hai 1.0	h aːj

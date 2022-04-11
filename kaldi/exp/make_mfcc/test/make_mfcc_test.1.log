@@ -1,81 +1,22 @@
 # compute-mfcc-feats --write-utt2dur=ark,t:exp/make_mfcc/test/utt2dur.1 --verbose=2 --config=conf/mfcc.conf scp,p:exp/make_mfcc/test/wav_test.1.scp ark:- | copy-feats --write-num-frames=ark,t:exp/make_mfcc/test/utt2num_frames.1 --compress=true ark:- ark,scp:/home/cs398/kaldi/egs/numbers/mfcc/raw_mfcc_test.1.ark,/home/cs398/kaldi/egs/numbers/mfcc/raw_mfcc_test.1.scp 
-# Started at Thứ năm, 07 Tháng 4 năm 2022 14:08:44 +07
+# Started at Thứ hai, 11 Tháng 4 năm 2022 14:49:53 +07
 #
-compute-mfcc-feats --write-utt2dur=ark,t:exp/make_mfcc/test/utt2dur.1 --verbose=2 --config=conf/mfcc.conf scp,p:exp/make_mfcc/test/wav_test.1.scp ark:- 
-WARNING (compute-mfcc-feats[5.5.1009~1-e4940]:Read():wave-reader.cc:260) Expected 616612 bytes in RIFF chunk, but after first data block there will be 36 + 616412 bytes (we do not support reading multiple data chunks).
 copy-feats --write-num-frames=ark,t:exp/make_mfcc/test/utt2num_frames.1 --compress=true ark:- ark,scp:/home/cs398/kaldi/egs/numbers/mfcc/raw_mfcc_test.1.ark,/home/cs398/kaldi/egs/numbers/mfcc/raw_mfcc_test.1.scp 
-ERROR (compute-mfcc-feats[5.5.1009~1-e4940]:ComputeFeatures():feat/feature-common-inl.h:41) Waveform and config sample Frequency mismatch: 44100 .vs 16000 (use --allow-downsample=true to allow  downsampling the waveform).
-
-[ Stack-Trace: ]
-/home/cs398/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0x793) [0x7fd2e95171c3]
-compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x561d69ab7c03]
-compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x1a5) [0x561d69ac4fcf]
-compute-mfcc-feats(main+0xbc7) [0x561d69ab5bd0]
-/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fd2e910e0b3]
-compute-mfcc-feats(_start+0x2e) [0x561d69ab4f4e]
-
-WARNING (compute-mfcc-feats[5.5.1009~1-e4940]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance S_S10_D1
-WARNING (compute-mfcc-feats[5.5.1009~1-e4940]:Read():wave-reader.cc:260) Expected 641720 bytes in RIFF chunk, but after first data block there will be 36 + 641520 bytes (we do not support reading multiple data chunks).
-ERROR (compute-mfcc-feats[5.5.1009~1-e4940]:ComputeFeatures():feat/feature-common-inl.h:41) Waveform and config sample Frequency mismatch: 44100 .vs 16000 (use --allow-downsample=true to allow  downsampling the waveform).
-
-[ Stack-Trace: ]
-/home/cs398/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0x793) [0x7fd2e95171c3]
-compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x561d69ab7c03]
-compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x1a5) [0x561d69ac4fcf]
-compute-mfcc-feats(main+0xbc7) [0x561d69ab5bd0]
-/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fd2e910e0b3]
-compute-mfcc-feats(_start+0x2e) [0x561d69ab4f4e]
-
-WARNING (compute-mfcc-feats[5.5.1009~1-e4940]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance S_S10_D2
-WARNING (compute-mfcc-feats[5.5.1009~1-e4940]:Read():wave-reader.cc:260) Expected 650090 bytes in RIFF chunk, but after first data block there will be 36 + 649890 bytes (we do not support reading multiple data chunks).
-ERROR (compute-mfcc-feats[5.5.1009~1-e4940]:ComputeFeatures():feat/feature-common-inl.h:41) Waveform and config sample Frequency mismatch: 44100 .vs 16000 (use --allow-downsample=true to allow  downsampling the waveform).
-
-[ Stack-Trace: ]
-/home/cs398/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0x793) [0x7fd2e95171c3]
-compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x561d69ab7c03]
-compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x1a5) [0x561d69ac4fcf]
-compute-mfcc-feats(main+0xbc7) [0x561d69ab5bd0]
-/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fd2e910e0b3]
-compute-mfcc-feats(_start+0x2e) [0x561d69ab4f4e]
-
-WARNING (compute-mfcc-feats[5.5.1009~1-e4940]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance S_S10_D3
-WARNING (compute-mfcc-feats[5.5.1009~1-e4940]:Read():wave-reader.cc:260) Expected 616610 bytes in RIFF chunk, but after first data block there will be 36 + 616410 bytes (we do not support reading multiple data chunks).
-ERROR (compute-mfcc-feats[5.5.1009~1-e4940]:ComputeFeatures():feat/feature-common-inl.h:41) Waveform and config sample Frequency mismatch: 44100 .vs 16000 (use --allow-downsample=true to allow  downsampling the waveform).
-
-[ Stack-Trace: ]
-/home/cs398/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0x793) [0x7fd2e95171c3]
-compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x561d69ab7c03]
-compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x1a5) [0x561d69ac4fcf]
-compute-mfcc-feats(main+0xbc7) [0x561d69ab5bd0]
-/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fd2e910e0b3]
-compute-mfcc-feats(_start+0x2e) [0x561d69ab4f4e]
-
-WARNING (compute-mfcc-feats[5.5.1009~1-e4940]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance S_S10_D4
-WARNING (compute-mfcc-feats[5.5.1009~1-e4940]:Read():wave-reader.cc:260) Expected 671752 bytes in RIFF chunk, but after first data block there will be 36 + 671552 bytes (we do not support reading multiple data chunks).
-ERROR (compute-mfcc-feats[5.5.1009~1-e4940]:ComputeFeatures():feat/feature-common-inl.h:41) Waveform and config sample Frequency mismatch: 44100 .vs 16000 (use --allow-downsample=true to allow  downsampling the waveform).
-
-[ Stack-Trace: ]
-/home/cs398/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0x793) [0x7fd2e95171c3]
-compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x561d69ab7c03]
-compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x1a5) [0x561d69ac4fcf]
-compute-mfcc-feats(main+0xbc7) [0x561d69ab5bd0]
-/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fd2e910e0b3]
-compute-mfcc-feats(_start+0x2e) [0x561d69ab4f4e]
-
-WARNING (compute-mfcc-feats[5.5.1009~1-e4940]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance S_S10_D5
-WARNING (compute-mfcc-feats[5.5.1009~1-e4940]:Read():wave-reader.cc:260) Expected 610708 bytes in RIFF chunk, but after first data block there will be 36 + 610504 bytes (we do not support reading multiple data chunks).
-ERROR (compute-mfcc-feats[5.5.1009~1-e4940]:ComputeFeatures():feat/feature-common-inl.h:41) Waveform and config sample Frequency mismatch: 44100 .vs 16000 (use --allow-downsample=true to allow  downsampling the waveform).
-
-[ Stack-Trace: ]
-/home/cs398/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0x793) [0x7fd2e95171c3]
-compute-mfcc-feats(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x25) [0x561d69ab7c03]
-compute-mfcc-feats(kaldi::OfflineFeatureTpl<kaldi::MfccComputer>::ComputeFeatures(kaldi::VectorBase<float> const&, float, float, kaldi::Matrix<float>*)+0x1a5) [0x561d69ac4fcf]
-compute-mfcc-feats(main+0xbc7) [0x561d69ab5bd0]
-/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7fd2e910e0b3]
-compute-mfcc-feats(_start+0x2e) [0x561d69ab4f4e]
-
-WARNING (compute-mfcc-feats[5.5.1009~1-e4940]:main():compute-mfcc-feats.cc:151) Failed to compute features for utterance S_S10_D6
-LOG (compute-mfcc-feats[5.5.1009~1-e4940]:main():compute-mfcc-feats.cc:185)  Done 0 out of 6 utterances.
-LOG (copy-feats[5.5.1009~1-e4940]:main():copy-feats.cc:143) Copied 0 feature matrices.
+compute-mfcc-feats --write-utt2dur=ark,t:exp/make_mfcc/test/utt2dur.1 --verbose=2 --config=conf/mfcc.conf scp,p:exp/make_mfcc/test/wav_test.1.scp ark:- 
+VLOG[2] (compute-mfcc-feats[5.5.1009~1-e4940]:main():compute-mfcc-feats.cc:182) Processed features for key S_S10_D1
+VLOG[2] (compute-mfcc-feats[5.5.1009~1-e4940]:main():compute-mfcc-feats.cc:182) Processed features for key S_S10_D2
+VLOG[2] (compute-mfcc-feats[5.5.1009~1-e4940]:main():compute-mfcc-feats.cc:182) Processed features for key S_S10_D3
+VLOG[2] (compute-mfcc-feats[5.5.1009~1-e4940]:main():compute-mfcc-feats.cc:182) Processed features for key S_S10_D4
+VLOG[2] (compute-mfcc-feats[5.5.1009~1-e4940]:main():compute-mfcc-feats.cc:182) Processed features for key S_S10_D5
+VLOG[2] (compute-mfcc-feats[5.5.1009~1-e4940]:main():compute-mfcc-feats.cc:182) Processed features for key S_S10_D6
+VLOG[2] (compute-mfcc-feats[5.5.1009~1-e4940]:main():compute-mfcc-feats.cc:182) Processed features for key S_S14_D1
+VLOG[2] (compute-mfcc-feats[5.5.1009~1-e4940]:main():compute-mfcc-feats.cc:182) Processed features for key S_S14_D2
+VLOG[2] (compute-mfcc-feats[5.5.1009~1-e4940]:main():compute-mfcc-feats.cc:182) Processed features for key S_S14_D3
+LOG (compute-mfcc-feats[5.5.1009~1-e4940]:main():compute-mfcc-feats.cc:181) Processed 10 utterances
+VLOG[2] (compute-mfcc-feats[5.5.1009~1-e4940]:main():compute-mfcc-feats.cc:182) Processed features for key S_S14_D4
+VLOG[2] (compute-mfcc-feats[5.5.1009~1-e4940]:main():compute-mfcc-feats.cc:182) Processed features for key S_S14_D5
+VLOG[2] (compute-mfcc-feats[5.5.1009~1-e4940]:main():compute-mfcc-feats.cc:182) Processed features for key S_S14_D6
+LOG (compute-mfcc-feats[5.5.1009~1-e4940]:main():compute-mfcc-feats.cc:185)  Done 12 out of 12 utterances.
+LOG (copy-feats[5.5.1009~1-e4940]:main():copy-feats.cc:143) Copied 12 feature matrices.
 # Accounting: time=0 threads=1
-# Ended (code 1) at Thứ năm, 07 Tháng 4 năm 2022 14:08:44 +07, elapsed time 0 seconds
+# Ended (code 0) at Thứ hai, 11 Tháng 4 năm 2022 14:49:53 +07, elapsed time 0 seconds
